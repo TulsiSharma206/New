@@ -1,0 +1,16 @@
+1) POST = /api/login/
+
+{
+  "email": "USerEmail",
+  "password" : "Password"
+}
+
+
+2) GET = /course/mycourse/
+
+Headers
+
+Content-Type  : application/json
+Authorization : Token
+
+3) GET = 

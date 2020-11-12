@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Add Teacher Progress| ANG Admin Portal</title>
+<base href="https://admin.aspirenowglobal.com" target="_self">
+<link rel="stylesheet" type="text/css" href="https://admin.aspirenowglobal.com/static/admin/css/base.css">
+<link rel="stylesheet" type="text/css" href="https://admin.aspirenowglobal.com/static/admin/css/nav_sidebar.css">
+<script src="https://admin.aspirenowglobal.com/static/admin/js/nav_sidebar.js" defer></script>
+<link rel="stylesheet" type="text/css" href="https://admin.aspirenowglobal.com/static/admin/css/forms.css">
+<script src="https://admin.aspirenowglobal.com/admin/jsi18n/"></script>
+<script src="https://admin.aspirenowglobal.com/static/admin/js/vendor/jquery/jquery.js"></script>
+<script src="https://admin.aspirenowglobal.com/static/admin/js/jquery.init.js"></script>
+<script src="https://admin.aspirenowglobal.com/static/admin/js/core.js"></script>
+<script src="https://admin.aspirenowglobal.com/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script src="https://admin.aspirenowglobal.com/static/admin/js/actions.js"></script>
+<script src="https://admin.aspirenowglobal.com/static/admin/js/urlify.js"></script>
+<script src="https://admin.aspirenowglobal.com/static/admin/js/prepopulate.js"></script>
+<script src="https://admin.aspirenowglobal.com/static/admin/js/vendor/xregexp/xregexp.js"></script>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://admin.aspirenowglobal.com/static/admin/css/responsive.css">
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+<body class=" app-course model-fileupload change-form" data-admin-utc-offset="0">
+
+<div id="container">
+
+<div id="header">
+<div id="branding">
+<h1 id="site-name"><a href="/admin/">ANG</a></h1>
+</div>
+<div id="user-tools">
+Welcome,
+<strong><a href="/cdn-cgi/l/email-protection" class="_cf_email_" data-cfemail="8aebeee7e3e4caede7ebe3e6a4e9e5e7">[email&#160;protected]</a></strong>.
+<a href="/">View site</a> /
+<a href="/admin/password_change/">Change password</a> /
+<a href="/admin/logout/">Log out</a>
+</div>
+</div>
+
+<div class="breadcrumbs">
+<a href="/admin/">Home</a>
+&rsaquo; <a href="/admin/course/">Course</a>
+&rsaquo; <a href="/admin/progress/teacherprogre/">Teacher Progress</a>
+&rsaquo; Add Teacher Progress
+</div>
+<div class="main shifted" id="main">
+<button class="sticky toggle-nav-sidebar" id="toggle-nav-sidebar" aria-label="Toggle navigation"></button>
+<nav class="sticky" id="nav-sidebar">
+<div class="app-course module current-app">
+<table>
+<caption>
+<a href="/admin/course/" class="section" title="Models in the Course application">Course</a>
+</caption>
+<tr class="model-chapter">
+<th scope="row"><a href="/admin/course/chapter/">Chapters</a></th>
+<td><a href="/admin/course/chapter/add/" class="addlink">Add</a></td>
+</tr>
+<tr class="model-course">
+<th scope="row"><a href="/admin/course/course/">Courses</a></th>
+<td><a href="/admin/course/course/add/" class="addlink">Add</a></td>
+</tr>
+<tr class="model-fileupload current-model">
+<th scope="row"><a href="/admin/course/fileupload/" aria-current="page">File uploads</a></th>
+<td><a href="/admin/course/fileupload/add/" class="addlink">Add</a></td>
+</tr>
+<tr class="model-purchase">
+<th scope="row"><a href="/admin/course/purchase/">Purchases</a></th>
+<td><a href="/admin/course/purchase/add/" class="addlink">Add</a></td>
+</tr>
+</table>
+</div>
+<div class="app-mcquestions module">
+<table>
+<caption>
+<a href="/admin/mcquestions/" class="section" title="Models in the Mcquestions application">Mcquestions</a>
+</caption>
+<tr class="model-mcquestions">
+<th scope="row"><a href="/admin/mcquestions/mcquestions/">Mcquestionss</a></th>
+<td><a href="/admin/mcquestions/mcquestions/add/" class="addlink">Add</a></td>
+</tr>
+<tr class="model-studentpercentage">
+<th scope="row"><a href="/admin/mcquestions/studentpercentage/">Student percentages</a></th>
+<td><a href="/admin/mcquestions/studentpercentage/add/" class="addlink">Add</a></td>
+</tr>
+<tr class="model-student">
+<th scope="row"><a href="/admin/mcquestions/student/">Students</a></th>
+<td><a href="/admin/mcquestions/student/add/" class="addlink">Add</a></td>
+</tr>
+</table>
+</div>
+<div class="app-progress module">
+<table>
+<caption>
+<a href="/admin/progress/" class="section" title="Models in the Progress application">Progress</a>
+</caption>
+<tr class="model-studentprogress">
+<th scope="row"><a href="/admin/progress/studentprogress/">Student progresss</a></th>
+<td><a href="/admin/progress/studentprogress/add/" class="addlink">Add</a></td>
+</tr>
+</table>
+</div>
+<div class="app-user module">
+<table>
+<caption>
+<a href="/admin/user/" class="section" title="Models in the User application">User</a>
+</caption>
+<tr class="model-batch">
+<th scope="row"><a href="/admin/user/batch/">Batchs</a></th>
+<td><a href="/admin/user/batch/add/" class="addlink">Add</a></td>
+</tr>
+<tr class="model-consultation">
+<th scope="row"><a href="/admin/user/consultation/">Consultations</a></th>
+<td><a href="/admin/user/consultation/add/" class="addlink">Add</a></td>
+</tr>
+<tr class="model-contactus">
+<th scope="row"><a href="/admin/user/contactus/">Contact uss</a></th>
+<td><a href="/admin/user/contactus/add/" class="addlink">Add</a></td>
+</tr>
+<tr class="model-enroll">
+<th scope="row"><a href="/admin/user/enroll/">Enrolls</a></th>
+<td><a href="/admin/user/enroll/add/" class="addlink">Add</a></td>
+</tr>
+<tr class="model-paymentinfo">
+<th scope="row"><a href="/admin/user/paymentinfo/">PaymentInfo</a></th>
+<td><a href="/admin/user/paymentinfo/add/" class="addlink">Add</a></td>
+</tr>
+<tr class="model-user">
+<th scope="row"><a href="/admin/user/user/">Users</a></th>
+<td><a href="/admin/user/user/add/" class="addlink">Add</a></td>
+</tr>
+</table>
+</div>
+<a href="https://admin.aspirenowglobal.com/course/mediaupload/">MEDIA UPLOAD</a>
+</nav>
+<div class="content">
+
+<div id="content" class="colM">
+<h1>Add file upload</h1>
+<div id="content-main">
+
+    <form id="form">
+        <div>
+            <fieldset class="module aligned ">
+                <div class="form-row field-courses">
+                    <div>
+                    <label for="id_courses">Select Batch:</label>
+                    <div class="related-widget-wrapper">
+                        <select id="batch"  >
+                            <option >Select Batch</option>
+                        </select>
+
+                    </div>
+                    </div>
+                    </div>
+
+
+
+
+
+                <div class="form-row field-courses">
+                    <div>
+                    <label for="id_courses">Select Teacher:</label>
+                    <div class="related-widget-wrapper">
+                        <select id="user"  >
+                            <option >Select Teacher</option>
+                        </select>
+
+                    </div>
+                    </div>
+                    </div>
+
+
+                    <div class="form-row field-courses">
+                        <div>
+                        <label for="id_courses">Select Courses:</label>
+                        <div class="related-widget-wrapper">
+                            <select id="courses"  onchange="chapterSelect(this.value)">
+                                <option >Select Course</option>
+                            </select>
+
+                        </div>
+                        </div>
+                        </div>
+
+
+                        <div class="form-row field-courses">
+                            <div>
+                                <label for="chapter">Select Chapter</label>
+                            <div class="related-widget-wrapper">
+                                <select id="chapter"  onchange="chooseMedia(this.value)">
+                                    <option >Select Chapter</option>
+                                </select>
+    
+                            </div>
+                            </div>
+                            </div>
+
+
+                            <div class="form-row field-media">
+                                <div>
+                                <label class="required" for="id_media">Media:</label>
+                                <div class="related-widget-wrapper">
+                                <select name="media" required="" id="media">
+                                    <option >Select Media</option>
+                                </select>
+                                <!-- <a class="related-widget-wrapper-link add-related" id="add_id_media" href="/admin/course/fileupload/add/?_to_field=id&amp;_popup=1" title="Add another file upload"><img src="/static/admin/img/icon-addlink.svg" alt="Add"></a> -->
+                                </div>
+                                </div>
+                                </div>
+
+                                <div class="form-row field-partialcomplete">
+                                    <div class="checkbox-row">
+                                    <input type="checkbox" name="partial" id="partial" value="1" checked="">
+                                        <label class="vCheckboxLabel" for="partial">Partial complete</label>
+                                    </div>
+                                    </div>
+
+
+                                    <div class="form-row field-fullcomplete">
+                                        <div class="checkbox-row">
+                                        <input type="checkbox" name="full" value="1" id="full">
+                                            <label class="vCheckboxLabel" for="full">Full complete</label>
+                                        </div>
+                                        </div>
+
+       
+    </fieldset>
+    <input type="submit" value="Save" class="default" >
+    <p id="pleasewait" style="display: none;">Please Wait File is uploading...</p>
+    </div>
+      </form>
+
+
+
+</div>
+<br class="clear">
+</div>
+
+<div id="footer"></div>
+</div>
+</div>
+</div>
+
+
+
+
+
+    <script>
+        fetch("https://admin.aspirenowglobal.com/progres/teacherlist/", {method: 'GET'})
+        .then(response => response.json())
+        .then(result => {  
+            result.userinfo.forEach(element => {
+                document.getElementById('user').innerHTML += `
+                    <option value="${element.id}">${element.email}</option>
+                `;
+            });
+            console.log(result)
+        })
+        .catch(error => console.log('error', error));
+
+
+        fetch("https://admin.aspirenowglobal.com/progres/batchlist/", {method: 'GET'})
+        .then(response => response.json())
+        .then(result => { 
+
+            result.data.forEach(element => {
+                document.getElementById('batch').innerHTML += `
+                    <option value="${element.id}">${element.name}</option>
+                `;
+            });
+            console.log(result)
+        })
+        .catch(error => console.log('error', error));
+
+
+        fetch("https://admin.aspirenowglobal.com/course/allcourse/", {method: 'GET'})
+        .then(response => response.json())
+        .then(result => {
+            result.data.forEach(element => {
+                document.getElementById('courses').innerHTML += `
+                    <option value="${element.id}">${element.title}</option>
+                `;
+            });
+        })
+        .catch(error => console.log('error', error));
+
+        function chapterSelect(id){
+            fetch(`https://admin.aspirenowglobal.com/course/chapterp/${id}/`, {method: 'GET'})
+            .then(response => response.json())
+            .then(result => {
+                document.getElementById('chapter').innerHTML = '';
+                chooseMedia(result.data[0].id);
+                // console.log(result);
+                result.data.forEach(element => {
+                    document.getElementById('chapter').innerHTML += `
+                        <option value="${element.id}">${element.title}</option>
+                    `;
+                });
+            })
+            .catch(error => console.log('error', error));
+        }
+
+
+
+        function chooseMedia(id){
+            fetch(`https://admin.aspirenowglobal.com/course/chaptervideo/${id}/`, {method: 'GET'})
+            .then(response => response.json())
+            .then(result => {
+                document.getElementById('media').innerHTML = '';
+                result.Chaptervideos.forEach(element => {
+                    document.getElementById('media').innerHTML += `
+                        <option value="${element.id}">${element.name}</option>
+                    `;
+                });
+            })
+            .catch(error => console.log('error', error));
+        }
+
+
+     
+
+        document.getElementById('form').addEventListener('submit',(e)=>{
+            e.preventDefault();
+            document.getElementById('pleasewait').style.display = 'block';
+            // getSelectValues(document.getElementById('media'));
+        var formdata = new FormData();
+formdata.append("teacherid", document.getElementById('user').value);
+formdata.append("coursid", document.getElementById('courses').value);
+formdata.append("chapterid", document.getElementById('chapter').value);
+formdata.append("mediaid", document.getElementById('media').value);
+formdata.append("batchid", document.getElementById('batch').value);
+formdata.append("half", document.getElementById('partial').value);
+formdata.append("full", document.getElementById('full').value);
+
+var requestOptions = {
+  method: 'POST',
+  body: formdata,
+  redirect: 'follow'
+};
+
+fetch("https://admin.aspirenowglobal.com/progres/teacherprogres/", requestOptions)
+  .then(response => response.text())
+  .then(result => window.open('https://admin.aspirenowglobal.com/admin/progress/teacherprogre/','_self'))
+  .catch(error => console.log('error', error));
+
+})
+    </script>
+</body>
+</html>
